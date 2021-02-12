@@ -1,6 +1,6 @@
 #  The date format
 
-tooltip: "%a, %b %e, %Y, %l:%M %p %z"
+tooltip: "%b %e, %Y"
 
 post:
   long: "%b %e, %Y"

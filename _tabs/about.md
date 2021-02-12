@@ -1,5 +1,5 @@
 ---
-title: About
+title: Sobre o autor
 icon: fas fa-info
 order: 4
 ---
