@@ -16,7 +16,7 @@ O [Send2KindleBot](https://t.me/Send2KindleBot) é a maneira mais prática de en
 
 [Soluções de problemas](#soluções-de-problemas)
 
-#### Instruções de uso
+## Instruções de uso
 
 * Usando o Telegram, fale com o [@Send2KindleBot](https://t.me/Send2KindleBot)
 * Clique em `Começar`
@@ -26,7 +26,7 @@ O [Send2KindleBot](https://t.me/Send2KindleBot) é a maneira mais prática de en
 
 Feita a configuração, o bot estará pronto para enviar os arquivos, sejam eles mobi, doc, txt, epub ou outro formato. O bot também é capaz de enviar sites para o Kindle. Neste caso, um PDF da página será enviado para seu dispositivo, sendo possível optar no momento do envio se uma conversão para mobi deve ser feita ou não.
 
-#### Soluções de problemas
+## Soluções de problemas
 
 > **Bot não funciona ou os arquivos não chegam**
 
