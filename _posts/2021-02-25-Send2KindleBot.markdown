@@ -4,6 +4,7 @@ title:  "Send2KindleBot - Como enviar arquivos para seu Kindle"
 date:   2021-02-25 15:00:00 -0300
 categories: Telegram Bot
 tags: kindle send2kindlebot telegram bot
+image: "https://gabrf.com/images/send2kindlebot.png"
 ---
 O [Send2KindleBot](https://t.me/Send2KindleBot) é a maneira mais prática de enviar arquivos e documentos para seu Kindle! É um bot no [Telegram](https://telegram.org), gratuito e de [código aberto](https://github.com/GabrielRF/Send2KindleBot), traduzido para mais de 20 idiomas. 
 
