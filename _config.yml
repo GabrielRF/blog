@@ -28,7 +28,7 @@ description: >-                        # used by seo meta and the atom feed
   Site https://gabrf.com
 
 # fill in the protocol & hostname for your site, e.g., 'https://username.github.io'
-url: ''
+url: 'https://blog.gabrf.com'
 
 author: Gabriel RF                  # change to your full name
 
