@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Send2KindleBot - Como enviar arquivos para seu Kindle"
-date:   2021-02-12 17:05:51 -0300
+date:   2021-02-25 15:00:00 -0300
 categories: Telegram Bot
 tags: kindle send2kindlebot telegram bot
 ---
