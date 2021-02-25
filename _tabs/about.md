@@ -1,8 +1,12 @@
 ---
-title: Sobre o autor
+title: Sobre
 icon: fas fa-info
 order: 4
 ---
 
+Olá!
 
-> **Note**: Add Markdown syntax content to file `_tabs/about.md` and it will show up on this page.
+Este blog é um local para guardar idéias sem exagerar nos termos técnicos.
+
+[GabRF.com](https://gabrf.com)
+

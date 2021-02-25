@@ -3,6 +3,9 @@
 # Import the theme
 theme: jekyll-theme-chirpy
 
+plugins:
+  - jekyll-image-size
+
 # Only if your site type is GitHub Project sites and doesn't have a custom domain,
 # change below value to '/projectname'.
 baseurl: ''
@@ -20,9 +23,9 @@ title: Gabriel RF                      # the main title
 tagline: Blog pessoal                  # it will display as the sub-title
 
 description: >-                        # used by seo meta and the atom feed
-  A minimal, portfolio, sidebar,
-  bootstrap Jekyll theme with responsive web design
-  and focuses on text presentation.
+  Blog pessoal.
+  Este blog é um local para guardar idéias sem exagerar nos termos técnicos.
+  Site https://gabrf.com
 
 # fill in the protocol & hostname for your site, e.g., 'https://username.github.io'
 url: ''
@@ -40,6 +43,7 @@ social:
   email: blog@gabrf.com             # change to your email address
   links:
     # The first element serves as the copyright owner's link
+    - https://t.me/GabrielRF
     - https://twitter.com/gabrf      # change to your twitter homepage
     - https://github.com/gabrielrf       # change to your github homepage
     - https://www.linkedin.com/in/gabrielrochaferreira
@@ -48,7 +52,7 @@ google_site_verification: google_meta_tag_verification # change to your verifica
 # --------------------------
 
 google_analytics:
-  id: ''          # Fill with your Google Analytics ID
+  id: 'G-16KBHNH0FY'          # Fill with your Google Analytics ID
   pv:
     # The Google Analytics pageviews switch.
     # DO NOT enable it unless you know how to deploy the Google Analytics superProxy.
