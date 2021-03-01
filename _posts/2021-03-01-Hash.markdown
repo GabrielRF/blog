@@ -1,0 +1,68 @@
+---
+layout: post
+title:  "Esqueci minha senha"
+date:   2021-03-01 18:00:00 -0300
+categories: [Segurança, Hash de senha]
+tags: senhas segurança hash
+---
+Quem administra um sistema deve ser capaz de consultar as senhas de todas as pessoas?
+
+<center><b>Definitivamente não!</b></center>
+
+As senhas nunca devem ser armazenadas *em claro*, de maneira que possam ser lidas, nos bancos de dados. Isto representa uma falha de segurança e potencializa as eventuais consequências de um vazamento de dados.
+
+Uma maneira de saber se o sistema é bem projetado ou não é clicando no botão "Esqueci minha senha". Se a senha for enviada para seu e-mail então claramente sua senha está salva no banco. Reclame. Está errado.
+
+## Funções HASH
+
+Sem entrar em muitos detalhes técnicos e de implementação, o que deve ser salvo no banco de dados é o *hash*  da senha. Uma função *hash* é uma função matemática que faz um cálculo que **não é reversível**, ou seja, uma vez calculado o *hash*, não é possível obter o dado que o gerou.
+
+Exemplos de cálculos usando diferentes algoritmos:
+```
+hash.md5('Gabriel')
+b70e2a0d855b4dc7b1ea34a8a9d10305
+
+hash.sha1('Gabriel')
+aaac72d4824650c176db2fc2451be237f164ea98
+
+hash.sha224('Gabriel')
+407df5cd4cac7957a889f640396e3e3622a8f4d880360b883c880772
+
+. . . 
+
+hash.sha512('Gabriel')
+7d3f59986c56cf117b273aa04bf82d6cd1eab4325f2799377a02ba441c7ee56162f77f9a023171f3c72ac346dc3293ddc89d5f8e0a70c4a1a14fe0ce13220f41
+```
+
+Ninguém é capaz, matematicamente, de obter a palavra *Gabriel* tendo os *hashes* calculados, pois o cálculo não é reversível. Ou seja, ao digitar a senha em um sistema, o sistema faz o cálculo de *hash*, verifica se o resultado coincide com o valor armazenado no banco de dados e permite ou não o acesso. **A senha não é salva**. Repare ainda que qualquer alteração no valor inserido na função *hash* gera um resultado completamente novo.
+
+Compare os valores gerados por *Gabriel* e *GAbriel*:
+```
+hash.md5('Gabriel')
+b70e2a0d855b4dc7b1ea34a8a9d10305
+
+hash.md5('GAbriel')
+8783d83d6f4098dd5d717b5f796c21a6
+```
+
+Com a alteração de apenas uma letra, trocando-a de minúscula para maiúscula, a saída já foi completamente diferente. Isto é útil para garantir *hashes* únicos para cada entrada.
+
+## Colisões
+
+Porém, funções *hash* não são perfeitas. O algoritmo MD5, por exemplo, tem uma saída de 32 caracteres, 128 bits, ou seja, possui um universo total de `2^128` (`340282366920938463463374607431768211456`) possibilidades. É um número enorme para um humano, mas não para um computador. Quando duas entradas geram o mesmo resultado *hash*, acontece o que é chamado de **colisão**. 
+
+Imagine um banco de dados com `2^128` *hashes* MD5 previamente calculados. Imagine também que uma pessoa teve acesso aos *hashes* dos usuários de determinado sistema[^1]. Esta pessoa não precisa saber sua senha, basta saber um valor que gere o mesmo *hash* (uma **colisão**) para se passar por você. Tal prática é chamada de **Ataque de Dicionário**. Por este motivo, novos algoritmos de *hash* são criados, pois a cada nova geração há um aumento no tamanho da saída, aumentando a quantidade de resultados e, consequentemente, diminuindo a possibilidade de **colisões**. A função *hash SHA512* possui 512 bits, ou seja, o valor total de possibilidades é: `13407807929942597099574024998205846127479365820592393377723561443721764030073546976801874298166903427690031858186486050853753882811946569946433649006084096`
+
+Fazendo as contas, o *SHA512* é `39 septrigintilhões` de vezes maior que o *MD5*! [^2]
+
+## Hash de arquivos
+
+Sabendo que uma função *hash* gera resultados que podem ser considerados únicos para diferentes entradas, outro uso comum é para verificar a integridade de arquivos. 
+
+Um bom exemplo é o sistema operacional Ubuntu, que pode ser baixado de inúmeros sites. Portanto, uma maneira segura de saber se o arquivo baixado é íntegro é calculando seu *hash* e comparando-o com o que é disponibilizado no site oficial[^3]. Desta forma não restará dúvidas se o arquivo foi adulterado ou não.
+
+[^1]: _Os sistemas devem ser protegidos de tais ataques usando *SALT* e/ou outros métodos, mas não é o foco do texto._
+
+[^2]: [https://www.wolframalpha.com/input/?i=2%5E512+%2F+2%5E128](https://www.wolframalpha.com/input/?i=2%5E512+%2F+2%5E128)
+
+[^3]: [releases.ubuntu.com](http://releases.ubuntu.com/)
