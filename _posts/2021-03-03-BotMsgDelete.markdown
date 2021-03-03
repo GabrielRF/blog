@@ -25,4 +25,6 @@ Portanto, não se preocupe. Sua mensagem foi apagada para o seu bem. A mensagem 
 
 ## Mensagens salvas
 
-O Telegram oferece um local específico para salvar tudo que você quiser, é o espaço *Mensagens Salvas*. Lá você pode salvar textos e arquivos de até 2GB cada, sem limite de arquivos. Para acessar, vá nas configurações do app e clique em *Mensagens Salvas* ou simplesmente fale consigo.
+O Telegram oferece um local específico para salvar tudo que você quiser, é o espaço *Mensagens Salvas*. Lá você pode salvar textos e arquivos de até 2GB cada, sem limite de arquivos. Para acessar, vá nas configurações do app e clique em *Mensagens Salvas*.
+
+**Dica: Fixe o *Mensagens Salvas* no topo das conversas.**
