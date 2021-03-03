@@ -22,3 +22,7 @@ Todo bot do Telegram é controlando pelo *token*, uma chave fornecida pelo app a
 Quando uma mensagem é apagada pelo bot, **a mensagem some para o usuário e também dos servidores do Telegram**. Ou seja, ao apagar a mensagem, todo o risco de vazamento de dados acaba, pois a mensagem deixa de existir. Mesmo que ocorra um problema em que o *token* fique exposto ou se torne público, as mensagens apagadas não poderão ser recuperadas.
 
 Portanto, não se preocupe. Sua mensagem foi apagada para o seu bem. A mensagem some do programa do bot, do servidor do Telegram e da sua tela. A informação some da onde não devia estar e continua sendo exclusivamente sua.  
+
+## Mensagens salvas
+
+O Telegram oferece um local específico para salvar tudo que você quiser, é o espaço *Mensagens Salvas*. Lá você pode salvar textos e arquivos de até 2GB cada, sem limite de arquivos. Para acessar, vá nas configurações do app e clique em *Mensagens Salvas* ou simplesmente fale consigo.
