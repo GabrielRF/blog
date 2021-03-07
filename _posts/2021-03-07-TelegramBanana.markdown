@@ -82,6 +82,8 @@ Selecione a entrada virtual principal do VoiceMeeter como saída de som e VoiceM
 
 ## Configurações no Telegram
 
+Entre em um chat de voz do Telegram e clique nos ajustes de som, marcados em vermelho.
+
 <center>
 <img src="/assets/img/BananaVoiceChat.png" alt="Canal de voz do Telegram" style="width:50%"> 
 <br><small>Canal de voz do Telegram</small>
