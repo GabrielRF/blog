@@ -25,10 +25,10 @@ Para iniciar o bot no grupo, envie `/iniciar`. O bot enviará uma mensagem comun
 
 > A pessoa que enviar este comando receberá todos os áudios em privado, via bot, para análise do conteúdo.
 
-<!--<center>
-<img src="/assets/img/voicechatstart.gif" alt="Tela inicial do VoiceMeeter Banana" style="width:50%"> 
-<br><small>Tela inicial do VoiceMeeter Banana</small>
-</center>-->
+<center>
+<img src="/assets/img/voicechatstart.gif" alt="Iniciando o ChatDeVozBot no grupo" style="width:50%"> 
+<br><small>Iniciando o ChatDeVozBot no grupo</small>
+</center>
 
 ### Como usar o VoiceMeeter
 
@@ -47,13 +47,18 @@ Deixando `B1` ativado, **o áudio será enviado para o Chat de Voz**, permitindo
 
 Para encerrar, basta que qualquer administrador envie `/parar`.
 
-<!--<center>
-<img src="/assets/img/voicechatstop.gif" alt="Tela inicial do VoiceMeeter Banana" style="width:50%"> 
-<br><small>Tela inicial do VoiceMeeter Banana</small>
-</center>-->
+<center>
+<img src="/assets/img/voicechatstop.gif" alt="Parando o ChatDeVozBot no grupo" style="width:50%"> 
+<br><small>Parando o ChatDeVozBot no grupo</small>
+</center>
 
 ## Instruções para uso geral
 
 Clique no botão ✋ enviado no grupo. Será aberta uma conversa com o bot. Clique em `Começar` e, em seguida, envie sua mensagem de voz.
+
+<center>
+<img src="/assets/img/voicechatstartuser.gif" alt="Enviando mensagem de voz para o ChatDeVozBot" style="width:50%"> 
+<br><small>Enviando mensagem de voz para o ChatDeVozBot</small>
+</center>
 
 Para enviar uma nova mensagem, repita o procedimento. 
