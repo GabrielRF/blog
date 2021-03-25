@@ -1,0 +1,50 @@
+---
+layout: post
+title:  "Os porquês do Wi-Fi"
+date:   2021-03-25 10:00:00 -0300
+categories: [Rede, Wi-Fi]
+tags: rede wifi mesh canal site-survey
+image: "https://blog.gabrf.com/assets/img/wificanais.jpg"
+---
+[*Originalmente postado no CocaTech*](https://cocatech.com.br/os-porques-do-wi-fi)
+
+---
+
+Atualmente muitos de nós possuímos redes wi-fi em casa e no trabalho. É uma comodidade inexplicável ter acesso à internet de qualquer lugar. Porém, poucos sabem os porquês da rede. Porque falta sinal em algum lugar ou até porque o sinal cai repentinamente. A ideia aqui é explicar um pouco os problemas e sugerir soluções.
+
+Praticamente todas as redes wi-fi funcionam em 2.4 GHz. Por que isso? Todas as frequências entre 2.4 GHz e 2.5 GHz fazem parte de uma classe de frequências chamada ISM, frequências não licenciáveis, ou seja, de uso livre para qualquer tecnologia desde que respeitados os limites impostos pelo país.
+
+A tecnologia wi-fi em 2.4 GHz (mais comum) usa 11 canais (padrão EUA) de 22 MHz cada. Vão de 2401 MHz a 2473 MHz.
+
+|Canal|Frequência início|Frequência meio|Frequência fim|
+|----:|----------------:|--------------:|-------------:|
+|1|2401|2412|2423|
+|2|2406|2417|2428|
+|3|2411|2422|2433|
+|4|2416|2427|2438|
+|5|2421|2432|2443|
+|6|2426|2437|2448|
+|7|2431|2442|2453|
+|8|2436|2447|2458|
+|9|2441|2452|2463|
+|10|2446|2457|2468|
+|11|2451|2462|2473|
+
+<center>
+<img src="/assets/img/wificanais.jpg" alt="Canais de wi-fi (adaptado da Wikipedia)" style="width:100%"> 
+<br><small>Canais de wi-fi (adaptado da <a href="https://en.wikipedia.org/wiki/List_of_WLAN_channels">Wikipedia</a>)</small>
+</center>
+
+Cada canal interfere em quatro canais em cada um dos lados. Portanto, caso esteja usando o canal 6, por exemplo, os canais 2, 3, 4 e 5 sofrerão de um lado assim como os canais 7, 8, 9 e 10 sofrerão do outro. Somente estarão totalmente livres de interferência os canais 1 e 11.
+
+Site survey é o nome do estudo feito em um ambiente sobre a ocupação de tais canais visando um melhor uso do espectro. Como exemplo, cito o iStumbler, gratuito para OS X. Nele podemos ver, entre outros detalhes, em quais canais estão cada uma das redes. Há vários programas com a mesma finalidade. Busque o que atende melhor as suas necessidades.
+
+Por ser uma banda livre, também podem ser encontrados em 2.4 GHz diversos outros dispositivos em funcionamento. O telefone sem fio, por exemplo, pode ser um vilão para as redes wi-fi. É exatamente por isso que eles possuem a tecla “canal” (channel). Sua função é alterar o canal em uso, diminuindo assim interferências.
+
+Outro grande vilão é o forno de microondas. Ele também opera na faixa de 2.4 GHz, frequência capaz de movimentar as moléculas da água. Movimento é igual a calor. Pronto. É assim que ele funciona. E assim também que ele causa interferência nas redes.
+
+É por esse mesmo motivo que uma rede sem fio tem dificuldades de atravessar banheiros. O que temos em abundância lá? Água! Grande parte (ou toda) a potência do sinal é perdida. Á agua a “consome”. Além disso, o sinal sem fio costuma ter dificuldade de atravessar espelhos e superfícies metálicas, muito comuns em banheiros.
+
+Ainda não resolveu os problemas da sua rede? Comece a procurar ao seu redor então por aparelhos de babá-eletrônica, walkie-talkies etc. É triste, mas muitas coisas operam em 2.4 GHz.
+
+Como último recurso, opte por um roteador sem fio 802.11a/ac/n, pois operam na faixa de 5 GHz. A vantagem dessa faixa é oferecer mais canais e sofrer menos interferência, pois poucos dispositivos operam nela. A desvantagem de operar em 5 GHz é a menor área de cobertura. Mantidos todos os parâmetros constantes, quanto maior a frequência, menor a distância. Por isso, caso tenha um roteador que opera nas duas bandas, provavelmente você já reparou que uma das redes é muito maior que a outra.
