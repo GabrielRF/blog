@@ -1,7 +1,7 @@
 PATH
   remote: .
   specs:
-    jekyll-theme-chirpy (3.2.1)
+    jekyll-theme-chirpy (3.2.2)
       jekyll (~> 4.1)
       jekyll-archives (~> 2.2)
       jekyll-paginate (~> 1.1)
@@ -22,9 +22,10 @@ GEM
     ethon (0.12.0)
       ffi (>= 1.3.0)
     eventmachine (1.2.7)
+    fastimage (2.2.3)
     ffi (1.14.2)
     forwardable-extended (2.6.0)
-    html-proofer (3.18.5)
+    html-proofer (3.18.6)
       addressable (~> 2.3)
       mercenary (~> 0.3)
       nokogumbo (~> 2.0)
@@ -52,6 +53,9 @@ GEM
       terminal-table (~> 2.0)
     jekyll-archives (2.2.1)
       jekyll (>= 3.6, < 5.0)
+    jekyll-image-size (1.2.1)
+      fastimage (>= 1.8)
+      jekyll (>= 3.7)
     jekyll-paginate (1.1.0)
     jekyll-redirect-from (0.16.0)
       jekyll (>= 3.3, < 5.0)
@@ -72,9 +76,11 @@ GEM
       rb-fsevent (~> 0.10, >= 0.10.3)
       rb-inotify (~> 0.9, >= 0.9.10)
     mercenary (0.4.0)
-    nokogiri (1.11.1-x86_64-darwin)
+    mini_portile2 (2.5.0)
+    nokogiri (1.11.1)
+      mini_portile2 (~> 2.5.0)
       racc (~> 1.4)
-    nokogiri (1.11.1-x86_64-linux)
+    nokogiri (1.11.1-x86_64-darwin)
       racc (~> 1.4)
     nokogumbo (2.0.4)
       nokogiri (~> 1.8, >= 1.8.4)
@@ -106,11 +112,12 @@ GEM
     yell (2.2.2)
 
 PLATFORMS
+  ruby
   x86_64-darwin-20
-  x86_64-linux
 
 DEPENDENCIES
   html-proofer (~> 3.18)
+  jekyll-image-size (~> 1.2)
   jekyll-theme-chirpy!
   tzinfo (~> 1.2)
   tzinfo-data
