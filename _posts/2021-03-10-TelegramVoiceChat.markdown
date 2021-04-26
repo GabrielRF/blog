@@ -4,6 +4,7 @@ title:  "ChatDeVozBot - Inserções de voz no Telegram"
 date:   2021-03-10 12:00:00 -0300
 categories: [Telegram, VoiceMeeter Banana]
 tags: telegram voicemeeter banana voz audio
+image: "https://blog.gabrf.com/assets/img/BananaScreen.png"
 ---
 
 > Atenção: Para este guiar funcionar, é necessário ler [este post](https://blog.gabrf.com/posts/TelegramBanana/) antes!
@@ -54,7 +55,7 @@ Para encerrar, basta que qualquer administrador envie `/parar`.
 
 ## Instruções para uso geral
 
-Clique no botão ✋ enviado no grupo. Será aberta uma conversa com o bot. Clique em `Começar` e, em seguida, envie sua mensagem de voz.
+Clique no botão `/Participar` enviado no grupo. Será aberta uma conversa com o bot. Clique em `Começar` e, em seguida, envie sua mensagem de voz.
 
 <center>
 <img src="/assets/img/voicechatstartuser.gif" alt="Enviando mensagem de voz para o ChatDeVozBot" style="width:50%"> 
