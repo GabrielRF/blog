@@ -4,7 +4,7 @@ title:  "Sua senha deve conter:"
 date:   2021-04-26 10:30:00 -0300
 categories: [Segurança, Gerenciadores de senhas]
 tags: senhas segurança gerenciador cofre
-image: "https://gabrf.com/images/enpass_usage.gif"
+image: "https://blog.gabrf.com/assets/img/enpass_control.jpg"
 ---
 - Letras maiúsculas
 - Letras minúsculas
