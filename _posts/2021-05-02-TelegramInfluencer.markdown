@@ -3,7 +3,7 @@ layout: post
 title: "Telegram não aumenta engajamento"
 date: 2021-05-02 14:00:00 -0300
 categories: [Telegram, Curiosidades]
-tags: telegram ferramenta influencers 
+tags: telegram ferramenta influencers engajamento analytics 
 image: "/assets/img/TelegramTool.jpeg"
 ---
 
