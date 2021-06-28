@@ -4,6 +4,7 @@ title:  "VoiceMeeter Banana e Chat de Voz do Telegram"
 date:   2021-03-07 12:00:00 -0300
 categories: [Telegram, VoiceMeeter Banana]
 tags: telegram voicemeeter banana voz audio
+image: "/assets/img/BananaComplete.png"
 ---
 *[Originalmente postado no Telegraph](https://telegra.ph/VoiceMeeter-Banana-e-Chat-de-voz-do-Telegram-01-28)*
 
