@@ -1,6 +1,14 @@
 #  The contact options.
 
 -
+  type: site
+  icon: 'fab fa-telegram-plane'
+  url: 'https://t.me/GabRF'
+-
+  type: site
+  icon: 'fas fa-globe'
+  url: 'https://gabrf.com'
+-
   type: github
   icon: 'fab fa-github-alt'
 -
