@@ -1,5 +1,8 @@
 #  The contact options.
 
+- type: telegram
+  icon: 'fab fa-telegram-plane'
+  url: 'https://t.me/GabrielRF'
 -
   type: github
   icon: 'fab fa-github'

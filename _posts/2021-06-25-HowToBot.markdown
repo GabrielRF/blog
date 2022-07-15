@@ -1,0 +1,186 @@
+---
+layout: post
+title:  "Como fazer bots para o Telegram"
+date:   2021-06-25 10:40:00 -0300
+categories: [Telegram, Bot]
+tags: telegram bot how-to dev python
+image: "/assets/img/botfather.jpg"
+---
+
+> Conteúdo apresentado na 58º Python Floripa: [https://youtu.be/Av2Mv3FVkdI?t=4120](https://youtu.be/Av2Mv3FVkdI?t=4120)
+
+Um bot no Telegram nada mais é que um programa de computador que segue uma receita de funcionamento, um algoritmo. Para funcionar é necessário que seu robô interaja com os servidores do Telegram. As instruções de como esta comunicação é feita é chamada de *API*, que pode ser entendida como uma interface de programação de aplicação, disponível em [https://core.telegram.org/bots/api](https://core.telegram.org/bots/api).
+
+Mas, antes de mais nada, vamos do início...
+
+## BotFather
+
+É aqui que tudo começa. É o pai dos bots. Todo bot, sem exceção, é criado falando-se com o [BotFather](https://t.me/BotFather).
+
+<center>
+<img src="/assets/img/botfather.jpg" alt="Logo do BotFather" style="width:50%"> 
+<br><small>Logo do BotFather</small>
+</center>
+
+Inicialmente envia-se o comando `/newbot`. Será solicitado um nome para o bot e, em seguida, um nome de usuário (*o @ alguma coisa*), que deve ser único e terminar com a palavra `bot`.
+
+O BotFather te fornecerá um *token*, que deve ser mantido em segredo. É usando o *token* que será feita a comunicação com os servidores do Telegram, seja para enviar mensagens usando o bot, seja para ler as mensagens que o bot recebeu. Tendo o *token* é possível ler todo o histórico do bot, por isto é tão importante guardá-lo em segredo.
+
+É também no BotFather que é definida a imagem do bot, sua descrição e o campo "sobre este bot". Funções avançadas, como o funcionamento *inline* e da plataforma de pagamentos também são ajustadas via BotFather. Ou seja, mexer neste bot é parte do dia-a-dia de quem cria e mantém bots.
+
+Alguns dos principais comandos disponíveis no BotFather:
+
+* `/newbot`: Criar um novo bot (máximo de 20 bots por conta).
+* `/mybots`: Listar bots criados.
+* `/setname`: Alterar nome (sem alterar o @).
+* `/setdescription`: Alterar descrição (texto exibido antes do primeiro uso do bot).
+* `/setabouttext`: Alterar texto presente na *bio*.
+* `/setuserpic`: Alterar imagem do bot.
+* `/setcommands`: Ajustar comandos disponíveis no menu.
+* `/deletebot`: Apagar bot.
+* `/token`: Ver token.
+* `/revoke`: Expirar token antigo e gerar um novo.
+* `/setjoingroups`: Definir se um bot pode entrar em grupos.
+* `/setprivacy`: Ajustar a privacidade de um bot em grupos.
+
+## ID no Telegram
+
+> O token usado aqui é fictício. Leia a parte sobre [BotFather](#botfather) para entender a importância de manter seu token seguro.
+
+Antes de seguirmos com a explicação, há um conceito simples e muito importante a ser explicado, o ID. Todo usuário, grupo e canal possui um ID único. **Pessoas possuem ID positivo**, enquanto **grupos e canais possuem IDs negativos**. É indiferente falar de ID para bots uma vez que um bot não é capaz de conversar com outro.
+
+O jeito mais simples de saber o ID de uma pessoa ou grupo é encaminhando uma mensagem para os bots [@userinfobot](https://t.me/userinfobot), [@getidsbot](https://t.me/getidsbot) ou abrindo o *getUpdates* do bot em um navegador pela URL: `https://api.telegram.org/bot158700146:AAHOPReqqTR8V7FXysa8mJCbQACUWSTBog8/getUpdates`, substituindo pelo *token* do seu bot.
+
+## Send Message
+
+> Para os exemplos deste post usarei a biblioteca [PyTelegramBotApi](https://github.com/eternnoir/pyTelegramBotAPI), em Python.
+
+Começando pelo mais simples, um bot não precisa de muita coisa para enviar uma mensagem. O único requisito é que a pessoa já tenha falado com o bot anteriormente ou que o bot faça parte do grupo/canal. Ou seja, um bot não é capaz de falar com quem nunca falou com ele nem enviar mensagens para grupos/canais que não faça parte.
+
+```python
+import telebot
+
+TOKEN = "158700146:AAHOPReqqTR8V7FXysa8mJCbQACUWSTBog8"
+
+bot = telebot.TeleBot(TOKEN)
+
+destination = 9083329
+message = "Olá! Tudo bem?"
+
+bot.send_message(destination, message)
+```
+
+Neste caso `destination` é o ID que receberá a mensagem e `message` é o texto a ser enviado.
+
+Para adicionar formatacão ao texto, basta escolher entre `HTML` ou `Markdown`, adicionar a formatação ao texto e colocar `parse_mode="HTML"` ou `parse_mode="Markdown"`, como exemplificado abaixo:
+
+```python
+message = "<b>Olá!</b> Tudo bem?"
+bot.send_message(destination, message, parse_mode="HTML")
+```
+
+<center>
+<img src="/assets/img/telegram_bold.gif" alt="Imagem com e sem formatação" style="width:50%"> 
+<br><small>Imagem com e sem formatação</small>
+</center>
+
+Para saber todos os tipos de formatação possíveis, visite [https://core.telegram.org/bots/api#formatting-options](https://core.telegram.org/bots/api#formatting-options)
+
+É interessante notar que o envio de mensagens pode ser feito completamente separado do recebimento. Ou seja, é possível ter o mesmo bot enviando mensagens de diferentes locais, contextos ou máquinas. Isto é, um bot pode ser usado para múltiplos envios, auxiliando a manter a quantidade de bots criados abaixo do limite de 20.
+
+## Webhook
+
+*Webhook* seria o método avançado para receber mensagens. Caso opte por usá-lo, é necessário subir um servidor web com SSL para que o Telegram te envie uma requisição sempre que houver uma mensagem. Por se tratar de um método um pouco mais técnico, não irei abordá-lo em detalhes aqui, pois não é o foco do blog.
+
+## Polling
+
+Método mais simples e rápido de fazer um bot receber mensagens. Neste método o bot vai até o Telegram perguntar se há atualizações, ao contrário do *Webhook*. Como vantagem, o *Polling* tem uma configuração extremamente simplificada e como desvantagem, costuma usar um pouco mais de rede para ficar fazendo as consultas.
+
+É importante saber que pode existir somente um processo fazendo *polling* de um bot. Ou seja, não é possível criar programas separados fazendo *polling* do mesmo bot. O próprio Telegram irá bloquear os processos excedentes caso isto ocorra.
+
+### Echo bot
+
+Um bot super simples, que repete as mensagens recebidas, pode ser feito com poucas linhas de código:
+
+```python
+import telebot
+
+TOKEN = "158700146:AAHOPReqqTR8V7FXysa8mJCbQACUWSTBog8"
+
+bot = telebot.TeleBot(TOKEN)
+
+@bot.message_handler(func=lambda m: True)
+def text(message):
+    bot.reply_to(message, message.text)
+
+bot.polling()
+```
+
+### Bot com comandos
+
+Exemplo de bot que responde aos comandos `/start` e `/pause`, além de responder `ok` a qualquer outra mensagem recebida.
+
+```python
+import telebot
+
+TOKEN = "158700146:AAHOPReqqTR8V7FXysa8mJCbQACUWSTBog8"
+
+bot = telebot.TeleBot(TOKEN)
+
+@bot.message_handler(commands=["start"])
+def start(message):
+    bot.send_chat_action(message.chat.id, 'typing')
+    bot.send_message(message.chat.id, message.text)
+
+@bot.message_handler(commands=["pause"])
+def pause(message):
+    bot.send_chat_action(message.chat.id, 'typing')
+    bot.send_message(message.chat.id, 'Parado')
+
+@bot.message_handler(func=lambda m: True)
+def text(message):
+    bot.reply_to(message, 'ok')
+
+bot.polling()
+```
+
+Repare a diferença entre o `send_message` e o `reply_to`. O primeiro simplesmente envia uma mensagem para a pessoa. Já o segundo responde a mensagem, ou seja, mantém o contexto. Gosto bastante da segunda maneira, principalmente quando o bot é usado em grupos. Ajuda a manter a organização e notifica quem chamou o bot mesmo quando o grupo está silenciado.
+
+Neste exemplo coloquei também o envio de ações, o `send_chat_action`, que dá característica de "humanização" ao bot, fazendo o usuário perceber que o bot recebeu a mensagem e está processando a resposta. Tal característica causa um efeito interessante, o de fazer as pessoas aguardarem um pouco antes de repetirem os comandos, evitando assim o envio excessivo de mensagens.
+
+<center>
+<img src="/assets/img/typing.gif" alt="Send Chat Action: Typing" style="width:50%"> 
+<br><small>Send Chat Action: Typing</small>
+</center>
+
+As possíveis ações para um bot são:
+
+* `typing`: Escrevendo.
+* `upload_photo`: Enviando uma foto.
+* `record_video`: Gravando vídeo.
+* `upload_video`: Enviando um vídeo.
+* `record_voice`: Gravando mensagens de voz.
+* `upload_document`: Enviando um arquivo.
+* `find_location`: Escrevendo (não traduzido adequadamente).
+* `record_video_note`: Gravando mensagem de vídeo.
+* `upload_video_note`: Enviando uma mensagem de vídeo.
+
+## Onde hospedar
+
+Um bot pode ser hospedado basicamente em qualquer lugar! Inicialmente, até para testes mesmo, recomendo que faça o bot em sua própria máquina para vê-lo funcionando rapidamente, sem perder tempo de início com a escolha de um servidor.
+
+Mantive por anos meus bots funcionando em Raspberry Pi. São uma ótima solução para manter tudo funcionando a um custo baixíssimo, pois o consumo de energia elétrica é impercetível na conta. Caso opte pela nuvem, as escolhas são diversas, cada uma com suas vantagens e desvantagens. Migrei para a nuvem apenas quando o RPi não deu mais conta. 
+
+Os serviços de nuvem que mais vejo as pessoas usando são:
+
+* [Scaleway](https://scaleway.com/)
+* [Digital Ocean](https://digitalocean.com/)
+* [Amazon AWS](https://aws.amazon.com/)
+* [Google Cloud](https://cloud.google.com/)
+* [Heroku](https://www.heroku.com/)
+
+É importante avaliar os custos e a dificuldade de se usar cada um deles.
+
+## Grupo no Telegram
+
+[Desenvolvimento de Bots](https://t.me/DesenvolvimentoDeBots)
