@@ -20,7 +20,7 @@ Faça um fork do [repositório original](https://github.com/GabrielRF/Rss2Telegr
 
 Vá em `Settings`, `Secrets`, `Actions` e crie as seguintes variáveis:
 
-### Obrigatórios
+### Obrigatórias
 
 * `BOT_TOKEN`: Token do bot que fará os envios. Fale com o [@BotFather](https://t.me/BotFather) caso não tenha um;
 
@@ -34,7 +34,9 @@ Vá em `Settings`, `Secrets`, `Actions` e crie as seguintes variáveis:
 
 * `BUTTON_TEXT`: Texto do botão a ser enviado. Veja a lista de componentes abaixo;
 
-* `EMOJIS`: Emojis que serão sorteados aleatoriamente a cada envio. Lista pré-definida:🗞,📰,🗒,🗓,📋,🔗,📝,🗃.
+* `EMOJIS`: Emojis que serão sorteados aleatoriamente a cada envio. Lista pré-definida:🗞,📰,🗒,🗓,📋,🔗,📝,🗃;
+
+* `PARAMETERS`: Parâmetros a serem acrescentados ao link. Exemplo: `utm_source=telegram&utm_medium=telegrammessage&utm_campaign=rss2telegram`.
 
 ### Componentes
 
