@@ -60,9 +60,9 @@ Para alterar o intervalo da ação basta alterar o arquivo `.github/workflows/cr
 
 Exemplos:
 
-`- cron: '0 */1 * * *`: Faz a ação ser executada uma vez por hora;
+`- cron: '0 */1 * * *'`: Faz a ação ser executada uma vez por hora;
 
-`- cron: '*/15 * * * *`: Faz a ação ser executada uma vez a cada quinze minutos.
+`- cron: '*/15 * * * *'`: Faz a ação ser executada uma vez a cada quinze minutos.
 
 ## Exemplos
 
