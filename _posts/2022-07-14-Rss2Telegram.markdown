@@ -18,15 +18,17 @@ Envio automático de feed RSS no Telegram! Funciona com envios para pessoas, gru
 
 Faça um fork do [repositório original](https://github.com/GabrielRF/Rss2Telegram), clicando em `fork`.
 
-Vá em `Settings`, `Secrets`, `Actions` e crie as seguintes variáveis:
-
 ### Obrigatórias
+
+Vá em `Settings`, `Secrets`, `Actions` e crie a variável:
 
 * `BOT_TOKEN`: Token do bot que fará os envios. Fale com o [@BotFather](https://t.me/BotFather) caso não tenha um;
 
 * `DESTINATION`: IDs ou `@` de quem receberá as mensagens;
 
 * `URL`: Lista de urls dos feeds separados por vírgulas.
+
+> As variáveis `DESTINATION` e `URL` podem ser criadas em `Secrets` ou em arquivos `.txt`, prevalecendo o que estiver em `Secrets`. Ou seja, caso crie `DESTINATION.txt` ou `URL.txt` é necessário remover o respectivo `Secret`.
 
 ### Opcionais
 
@@ -105,4 +107,6 @@ Exemplos:
 
 2. Bot somente entra em canais como administrador.
 
+## Participe
 
+Entre na aba [Discussions](https://github.com/GabrielRF/Rss2Telegram/discussions) no GitHub e vamos conversar sobre o projeto!
