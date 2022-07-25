@@ -54,6 +54,20 @@ Tanto o corpo da mensagem quanto o botão podem conter textos, emojis e/ou um do
 
 * `{EMOJI}` Emojis que serão sorteados aleatoriamente no momento do envio. Crie sua lista de emojis na variável EMOJIS.
 
+### Filtros
+
+Por padrão, todos o conteúdo do feed é enviado. Para criar regras de filtros, crie um arquivo chamado `RULES.txt` e adicione as regras conforme a necessidade. As regras serão lidas em ordem!
+
+> O valor de `termo` independe de minúsculas ou maiúsculas
+
+`ACCEPT:ALL`: Todas as mensagens serão enviadas;
+
+`DROP:ALL`: Todas as mensagens não serão enviadas;
+
+`ACCEPT:termo`: A mensagem será enviada se `termo` estiver presente;
+
+`DROP:termo`: A mensagem não será enviada se `termo` estiver presente.
+
 ### Ação
 
 Ajustadas as variáveis, vá em `Actions`, `Select workflow` e clique em `Enable workflow`. A ação irá rodar a cada 1 hora para verificar as atualizações.
@@ -66,7 +80,7 @@ Exemplos:
 
 `- cron: '*/15 * * * *'`: Faz a ação ser executada uma vez a cada quinze minutos.
 
-## Exemplos
+## Exemplos de mensagens
 
 ### Mensagem padrão
 
@@ -100,6 +114,27 @@ Exemplos:
 `MESSAGE_TEMPLATE`: `{EMOJI}<b>{TITLE}</b>\n\n{LINK}`;
 
 `BUTTON_TEXT`: Não definido.
+
+## Exemplos de filtros
+
+### Todos as mensagens serão enviadas, menos as que tiverem o termo `política`
+
+Conteúdo de `RULES.txt`:
+
+```
+ACCEPT:ALL
+DROP:Política
+```
+
+### Nenhuma mensagem será enviada, com exceção das mensagens com os termos `futebol` e `vôlei`
+
+Conteúdo de `RULES.txt`:
+
+```
+DROP:ALL
+ACCEPT:futebol
+ACCEPT:vôlei
+```
 
 ## Observações
 
