@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Automação Residencial: Interruptor de cenas"
-date: 2022-10-04 18:040:00 -0300
+date: 2022-10-04 18:40:00 -0300
 categories: [Automação Residencial, Interruptor de Cenas]
 tags: automação cenas sonoff smate homeassistant hass
 image: "/assets/img/sonoff_dualr3.jpg"
