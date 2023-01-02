@@ -4,7 +4,7 @@ title: "Send2KindleBot - Mudanças recentes na Amazon"
 date: 2023-01-02 18:00:00 -0300
 categories: Telegram Bot
 tags: kindle send2kindlebot telegram bot amazon
-image: "https://gabrf.com/images/send2kindlebot.png"
+image: "https://github.com/GabrielRF/Send2KindleBot/raw/master/icon.png?raw=true"
 ---
 
 > Porque seus arquivos não chegam
@@ -33,7 +33,7 @@ Recentemente, a Amazon passou a verificar o DNS reverso do e-mail, o que faz sen
 
 ## Correção
 
-Infelizmente a correção é inviável, portanto, não será feita.
+Infelizmente a correção é inviável, portanto, não será feita. As possibilidades são as seguintes:
 
 ### Domínio próprio
 
@@ -60,3 +60,5 @@ Seria muito interessante se a Amazon confiasse no servidor usado pelo bot. A con
 ### Solução real
 
 Por enquanto, não há o que ser feito. Todos os envios vão exigir a verificação por e-mail enquanto não surgir uma idéia melhor.
+
+Atualizarei o post quando houver uma resposta da Amazon.
