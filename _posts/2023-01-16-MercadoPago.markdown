@@ -156,7 +156,7 @@ print(payment['status'], payment['description'])
 
 ## Bot
 
-### Envia do pix copia e cola
+### Envia PIX Copia e Cola
 
 Este bot irá enviar uma cobrança no valor de R$ 10 (linha 27) para a pessoa que enviar o comando `/pagar`.
 
@@ -236,6 +236,10 @@ def cmd_pagar(message):
 if __name__ == "__main__":
     bot.infinity_polling()
 ```
+
+## Taxas
+
+Na data em que o texto foi escrito havia uma cobrança de 0.99% por pagamento. [Consulte o site oficial](https://www.mercadopago.com.br/ajuda/) para obter informações atualizadas.
 
 ## Lembrete
 
