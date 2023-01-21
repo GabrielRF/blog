@@ -186,4 +186,4 @@ Para remover tudo de uma só vez, basta executar:
 serverless remove
 ```
 
-Este comando, além de remover a função, removerá também o `bucker` e o `API Gateway`. Ou seja, não restará nada relacionado ao bot na nuvem da Amazon. Ele não pode ser desfeito, então use somente quando necessário.
+Este comando, além de remover a função, removerá também o `bucket` e o `API Gateway`. Ou seja, não restará nada relacionado ao bot na nuvem da Amazon. Ele não pode ser desfeito, então use somente quando necessário.
