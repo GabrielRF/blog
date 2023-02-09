@@ -81,6 +81,7 @@ print(result['response'])
 Abaixo, um script que gera cobrança com validade igual a 30 minutos (linha 5):
 
 ```python
+import datetime
 import mercadopago
 
 sdk = mercadopago.SDK(TOKEN)
@@ -161,6 +162,7 @@ print(payment['status'], payment['description'])
 Este bot irá enviar uma cobrança no valor de R$ 10 (linha 27) para a pessoa que enviar o comando `/pagar`.
 
 ```python
+import datetime
 import mercadopago
 import telebot
 
@@ -199,6 +201,7 @@ if __name__ == "__main__":
 Semelhante ao exemplo anterior, este bot envia uma cobrança para o usuário que enviar `/pagar`. A resposta será a imagem do QRCode com o PIX Copia e Cola como legenda.
 
 ```python
+import datetime
 import mercadopago
 import telebot
 from PIL import Image
