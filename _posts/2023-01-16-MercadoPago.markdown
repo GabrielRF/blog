@@ -150,8 +150,6 @@ sdk = mercadopago.SDK(TOKEN_MERCADOPAGO)
 result = sdk.payment().get(ID_DO_PAGAMENTO)
 payment = result["response"]
 
-
-payment = result["response"]
 print(payment['status'], payment['description'])
 ```
 
@@ -190,7 +188,7 @@ def create_payment(value):
 def cmd_pagar(message):
     payment = create_payment(10)
     pix_copia_cola = payment['response']['point_of_interaction']['transaction_data']['qr_code']
-    bot.send_message(message.from_user.id, pix_copia_cola)
+    bot.send_message(message.from_user.id, f'<code>pix_copia_cola</code>', parse_mode='HTML')
     
 if __name__ == "__main__":
     bot.infinity_polling()
@@ -204,6 +202,7 @@ Semelhante ao exemplo anterior, este bot envia uma cobrança para o usuário que
 import datetime
 import mercadopago
 import telebot
+import base64
 from PIL import Image
 from io import BytesIO
 
@@ -231,6 +230,7 @@ def create_payment(value):
 def cmd_pagar(message):
     payment = create_payment(10)
     pix_copia_cola = payment['response']['point_of_interaction']['transaction_data']['qr_code']
+    qr_code = payment['response']['point_of_interaction']['transaction_data']['qr_code_base64']
     qr_code = base64.b64decode(qr_code)
     qr_code_img = Image.open(BytesIO(qr_code))
     qrcode_output = qr_code_img.convert('RGB')
