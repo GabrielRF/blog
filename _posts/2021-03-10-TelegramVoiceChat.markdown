@@ -9,11 +9,6 @@ image: "https://blog.gabrf.com/assets/img/BananaScreen.png"
 
 > Atenção: Para este guiar funcionar, é necessário ler [este post](https://blog.gabrf.com/posts/TelegramBanana/) antes!
 
-<center>
-<img src="/assets/img/BananaScreen.png" alt="Tela inicial do VoiceMeeter Banana" style="width:100%"> 
-<br><small>Tela inicial do VoiceMeeter Banana</small>
-</center>
-
 Dando continuidade ao uso do VoiceMeeter, criei um bot para ser usado em Chats de Voz no Telegram. Sua principal função é receber mensagens de áudio e as encaminhar para uma pessoa responsável pela análise e reprodução do conteúdo. 
 
 ## Instruções para uso no grupo

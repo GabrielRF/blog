@@ -7,11 +7,6 @@ tags: telegram bot canal automação github rss
 image: "/assets/img/rsslogo.png"
 ---
 
-<center>
-<img src="/assets/img/rsslogo.png" alt="Logo RSS" style="width:50%; border-radius:20%"> 
-<br><small>Logo RSS</small>
-</center>
-
 Envio automático de feed RSS no Telegram! Funciona com envios para pessoas, grupos e canais, públicos ou privados.
 
 ## Configuração

@@ -4,15 +4,10 @@ title: "Send2KindleBot - Mudanças recentes na Amazon"
 date: 2023-01-02 18:00:00 -0300
 categories: Telegram Bot
 tags: kindle send2kindlebot telegram bot amazon
-image: "https://github.com/GabrielRF/Send2KindleBot/raw/master/icon.png?raw=true"
+image: "/assets/img/Send2KindleBot.png"
 ---
 
 > Porque seus arquivos não chegam
-
-<center>
-<img src="https://github.com/GabrielRF/Send2KindleBot/raw/master/icon.png?raw=true" alt="Send to Kindle Bot Logo" style="width:50%; border-radius:50%">
-<br><small>Logo do Send to Kindle Bot</small>
-</center>
 
 ## Funcionamento
 

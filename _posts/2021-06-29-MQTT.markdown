@@ -9,11 +9,6 @@ image: "/assets/img/mqtt.jpg"
 
 > Message Queuing Telemetry Transport.
 
-<center>
-<img src="/assets/img/mqtt.jpg" alt="Logo do MQTT." style="width:50%"> 
-<br><small>Logo do MQTT.</small>
-</center>
-
 MQTT é um protocolo de mensagens feito pela IBM para a internet das coisas, *IoT*. Foi desenhado para ser extremamente leve, possuindo duas funções básicas, publicar (*publish*) e inscrever-se/assinar (*subscribe*). É ideal para ser usado em dispositivos com pequeno poder de processamento, pouca banda disponível e alimentação energética limitada (baterias).
 
 ## Broker

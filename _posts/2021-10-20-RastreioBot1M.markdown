@@ -9,11 +9,6 @@ image: "https://rastreiobot.xyz/images/rastreiobot.png"
 
 > [https://rastreiobot.xyz](https://rastreiobot.xyz)
 
-<center>
-<img src="https://rastreiobot.xyz/images/rastreiobot.png" alt="Logo RastreioBot." style="width:50%; border-radius:50%"> 
-<br><small>Logo RastreioBot.</small>
-</center>
-
 Criado em 03 de Julho de 2015, o RastreioBot precisou de 2295 dias para alcançar a marca de 1.000.000 pacotes rastreados. Aproximadamente 400.000 pacotes foram rastreados só nos últimos seis meses![^1]
 
 Muito obrigado a todas as pessoas que me ajudaram com o bot, seja fazendo comentários, críticas, ajudando com a programação ou até com doações. A soma de tudo isto trouxe o bot ao primeiro milhão de pacotes.

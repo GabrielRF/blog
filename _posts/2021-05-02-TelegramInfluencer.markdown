@@ -9,11 +9,6 @@ image: "/assets/img/TelegramTool.jpeg"
 
 > Quem vê Analytics, não vê Telegram.
 
-<center>
-<img src="/assets/img/TelegramTool.jpeg" alt="Telegram como ferramenta. Imagem do Telegram." style="width:100%"> 
-<br><small>Telegram como ferramenta. <a href="https://telegram.org/blog/profile-videos-people-nearby-and-more/pt-br">Imagem do Telegram</a>.</small>
-</center>
-
 Telegram é uma ótima ferramenta para engajar o público e manter toda a comunicação organizada. **Permite notificar 100% de seus seguidores instantaneamente e formar uma comunidade unida e forte**. Tudo sem exibir números de telefone e preservando a privacidade de todos.
 
 ## Canais

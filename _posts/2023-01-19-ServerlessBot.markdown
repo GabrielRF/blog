@@ -7,11 +7,6 @@ tags: telegram bot aws serverless webhook
 image: "/assets/img/serverlessbot.png"
 ---
 
-<center>
-<img src="/assets/img/serverlessbot.png" alt="Imagens: AWS Lambda, Bot e Serverless" style="width:50%">
-<br><small>Imagens: AWS Lambda, Bot e Serverless</small>
-</center>
-
 ## Amazon Lambda
 
 Lambda é a hospedagem de funções do tipo `serverless` da Amazon. Estas funções não exigem o gerenciamento de recursos computacionais ou qualquer tipo de infraestrutura para funcionarem. Basta enviar o código fonte e a Amazon se encarregará de sua execução conforme os critérios definidos. O código fica "adormecido" e somente é executado quando chamado.

@@ -9,11 +9,6 @@ image: "/assets/img/TelegramGlasses.jpeg"
 
 > Post para desenvolvedores.
 
-<center>
-<img src="/assets/img/TelegramGlasses.jpeg" alt="Imagem do blog oficial do Telegram" style="width:50%"> 
-<br><small><a href="https://telegram.org/blog/animated-backgrounds/pt-br">Imagem do blog oficial do Telegram.</a></small>
-</center>
-
 ## Antes de mais nada...
 
 * **Pessoas**: Sempre com ID positivo;

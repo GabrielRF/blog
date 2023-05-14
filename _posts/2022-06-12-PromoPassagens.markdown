@@ -9,11 +9,6 @@ image: "/assets/img/promopassagens.jpg"
 
 > Automação do canal PromoPassagens com posts de lista do Twitter.
 
-<center>
-<img src="/assets/img/promopassagens.jpg" alt="Logo PromoPassagens" style="width:50%; border-radius:50%"> 
-<br><small><a href="https://t.me/PromoPassagens">PromoPassagens</a></small>
-</center>
-
 O canal PromoPassagens reúne as postagens de uma lista do Twitter em um canal do Telegram de forma automática. Os posts são formatados para um padrão e as cidades recebem `#hashtags` para facilitar buscas.
 
 __Link do repositório:__ [github.com/GabrielRF/PromoPassagens](https://github.com/GabrielRF/PromoPassagens/)

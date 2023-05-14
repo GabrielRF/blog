@@ -10,11 +10,6 @@ image: "/assets/img/BananaComplete.png"
 
 ---
 
-<center>
-<img src="/assets/img/BananaScreen.png" alt="Tela inicial do VoiceMeeter Banana" style="width:100%"> 
-<br><small>Tela inicial do VoiceMeeter Banana</small>
-</center>
-
 > Este será um breve guia de como controlar o que é transmitido para o Telegram. Não será um guia altamente técnico nem detalhado. A intenção é apenas demonstrar, de maneira rápida, como controlar o som de seu computador.
 
 ## Instalação

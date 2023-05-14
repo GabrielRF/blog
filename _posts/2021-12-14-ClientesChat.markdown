@@ -9,11 +9,6 @@ image: "/assets/img/ClientesChat_canal.png"
 
 > Como ter uma equipe de atendimento e manter organizadas as conversas com os clientes?
 
-<center>
-<img src="/assets/img/ClientesChat_canal.png" alt="ClientesChat" style="width:50%"> 
-<br><small><a href="https://clientes.chat">ClientesChat</a></small>
-</center>
-
 Uma solução de código aberto que auxilia no atendimento e na organização das conversas com seus clientes.
 
 O serviço é composto por três partes:

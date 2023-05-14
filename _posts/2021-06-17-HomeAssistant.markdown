@@ -9,11 +9,6 @@ image: "/assets/img/hass.png"
 
 > Integrando tudo.
 
-<center>
-<img src="/assets/img/hass.png" alt="Logo do Home Assistant." style="width:50%"> 
-<br><small>Logo do Home Assistant.</small>
-</center>
-
 Home Assistant é um software de código aberto, grátis e que pode ser executado em um Raspberry Pi, em um computador ou em um conteiner Docker. Sua principal função é integrar tudo. Ele permite que diferentes dispositivos, de diferentes marcas, conversem e reajam juntos, conforme regras definidas pelo usuário.
 
 Pode ser acessado via web ou por aplicativo. É uma solução bem completa de automação, identificando desde o status dos dispositivos até se a pessoa está andando ou dirigindo (rastreando o celular). Permite ser totalmente personalizado, ajustando-se cada item da interface de controle.

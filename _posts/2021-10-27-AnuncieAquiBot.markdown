@@ -7,11 +7,6 @@ tags: telegram bot anuncieaquibot propaganda anúncio
 image: "/assets/img/anuncieaqui.jpg"
 ---
 
-<center>
-<img src="/assets/img/anuncieaqui.jpg" alt="Anuncie Aqui Bot" style="width:50%; border-radius:50%"> 
-<br><small>Anuncie Aqui Bot</small>
-</center>
-
 O [AnuncieAquiBot](https://t.me/AnuncieAquiBot) é a maneira mais fácil e barata de ter visibilidade no Telegram!
 
 Os anúncios são postados em três outros bots, nas situações:

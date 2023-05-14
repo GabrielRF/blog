@@ -7,11 +7,6 @@ tags: automação hass homeassistant plantabaixa
 image: "/assets/img/hass1_bg.png"
 ---
 
-<center>
-<img src="/assets/img/hass1.gif" alt="Planta baixa no Home Assistant com a luz do corredor acendendo e apagando." style="width:50%"> 
-<br><small>Planta baixa no Home Assistant com a luz do corredor acendendo e apagando.</small>
-</center>
-
 ## Interface
 
 Um dos pontos que mais chamam a atenção na interface do Home Assistant é a possibilidade de se ter uma planta baixa do imóvel, que exibe, em tempo real, o estado dos dispositivos inteligentes. É uma maneira simples e bonita de se controlar tudo.

@@ -7,11 +7,6 @@ tags: telegram grupo bot regras
 image: "/assets/img/regrasrobot_logo.jpg"
 ---
 
-<center>
-<img src="/assets/img/regrasrobot_logo.jpg" alt="Logo RegrasRobot" style="width:50%; border-radius:50%"> 
-<br><small>Logo RegrasRobot</small>
-</center>
-
 Este bot tem uma função muito simples e objetiva, permitir a entrada de pessoas em um grupo do Telegram somente após lerem e aceitarem as regras. Ele pode ser usado em grupos públicos ou privados e sua configuração deve ser feita pessoa pessoa que é dona do grupo. O bot não aceitará fazer a configuração por outra pessoa.
 
 ## Como usar

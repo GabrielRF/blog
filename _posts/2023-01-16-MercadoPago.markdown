@@ -7,11 +7,6 @@ tags: telegram bot pix mercadopago
 image: "/assets/img/pix-logo.png"
 ---
 
-<center>
-<img src="/assets/img/pix-logo.png" alt="Logo PIX" style="width:50%; border-radius:50%">
-<br><small>Logo PIX</small>
-</center>
-
 De todas as APIs que já estudei, a do Mercado Pago foi sem dúvida uma das mais simples de implementar e usar. Este texto explica e dá exemplos de como podem ser enviadas cobranças usando-se um bot do Telegram. O limite é a sua criatividade.
 
 O uso da API é dividido em duas partes:

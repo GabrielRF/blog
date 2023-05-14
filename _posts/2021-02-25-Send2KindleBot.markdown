@@ -8,11 +8,6 @@ image: "https://gabrf.com/images/send2kindlebot.png"
 ---
 O [Send2KindleBot](https://t.me/Send2KindleBot) é a maneira mais prática de enviar arquivos e documentos para seu Kindle! É um bot no [Telegram](https://telegram.org), gratuito e de [código aberto](https://github.com/GabrielRF/Send2KindleBot), traduzido para mais de 20 idiomas. 
 
-<center>
-<img src="https://gabrf.com/images/send2kindlebot.png" alt="Send to Kindle Logo" style="width:50%; border-radius:50%"> 
-<br><small>Logo do Send to Kindle</small>
-</center>
-
 [Instruções de uso](#instruções-de-uso)
 
 [Soluções de problemas](#soluções-de-problemas)
