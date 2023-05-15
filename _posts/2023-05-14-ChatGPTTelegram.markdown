@@ -64,7 +64,7 @@ Pronto. Seu bot deve estar funcionando.
 
 ### Função *ask_chatgpt* 
 
-A função `ask_chatgpt` é responsável pelas consultas à API da OpenAI. É ela quem via a mensagem e recebe a resposta. A mensagem é enviada com `role: user`, indicando que são as mensagens enviadas pelo usuário. Já as respostas são armazenadas com `role: assistant`, pois são as respostas recebidas pelo assistente. É importante armazenar o histórico de mensagens para ser mantido o contexto da conversa. Caso o contexto não seja mantido (linhas [12](https://github.com/GabrielRF/ChatGPT-Telegram-Bot/blob/2570c9fbb8400c5d1998cf3dfe650af80e5d4473/bot.py#L12) e [20](https://github.com/GabrielRF/ChatGPT-Telegram-Bot/blob/2570c9fbb8400c5d1998cf3dfe650af80e5d4473/bot.py#L20)), a cada mensagem o bot irá se comportar como se fosse novo, como se não houvesse conversa anterior.
+A função `ask_chatgpt` é responsável pelas consultas à API da OpenAI. É ela que envia a mensagem e recebe a resposta. A mensagem é enviada com `role: user`, indicando que são as mensagens enviadas pelo usuário. Já as respostas são armazenadas com `role: assistant`, pois são as respostas recebidas pelo assistente. É importante armazenar o histórico de mensagens para ser mantido o contexto da conversa. Caso o contexto não seja mantido (linhas [12](https://github.com/GabrielRF/ChatGPT-Telegram-Bot/blob/2570c9fbb8400c5d1998cf3dfe650af80e5d4473/bot.py#L12) e [20](https://github.com/GabrielRF/ChatGPT-Telegram-Bot/blob/2570c9fbb8400c5d1998cf3dfe650af80e5d4473/bot.py#L20)), a cada mensagem o bot irá se comportar como se fosse novo, como se não houvesse conversa anterior.
 
 #### Parâmetros da OpenAI
 
