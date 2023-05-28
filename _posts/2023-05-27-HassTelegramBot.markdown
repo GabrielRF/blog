@@ -283,7 +283,7 @@ mode: single
 As duas ações desencadeadas pelo comando são:
 
 1. Tirar uma foto (`camera_snapshot`) usando a câmera definida em `device_id` e a armazena no caminho definido em `filename`;
-2. Envia a foto em formato de `documento`. A vantagem de enviar a foto como documento é que mantém a qualidade original. Para enviar a foto com compressão, torinando o envio mais rápido mas com perda de qualidade, substitua `send_document` por `send_photo`. 
+2. Envia a foto em formato de `documento`. A vantagem de enviar a foto como documento é que mantém a qualidade original. Para enviar a foto com compressão, tornando o envio mais rápido mas com perda de qualidade, substitua `send_document` por `send_photo`. 
 
 ## Falha "*no access to path*"
 
@@ -299,7 +299,7 @@ homeassistant:
 
 # Adicionar itens à lista de compras
 
-Para adicionar ítens à Lista de Compras, [integração disponível aqui](https://www.home-assistant.io/integrations/shopping_list/), basta enviar uma mensagem para o bot contendo o termo `comprar`.
+Para adicionar itens à Lista de Compras, [integração disponível aqui](https://www.home-assistant.io/integrations/shopping_list/), basta enviar uma mensagem para o bot contendo o termo `comprar`.
 
 ```yaml
 alias: Telegram Lista de Compras
@@ -383,7 +383,7 @@ Esta automação somente será executada caso o termo `comprar` não esteja pres
       language: pt-br
 ```
 
-Este serviço irá processar a mensagem recebida e executar o comando. Definir o idioma não é obrigatório, mas torna a açào muito mais rápida, portanto, é recomendável ter o idioma ajustado.
+Este serviço irá processar a mensagem recebida e executar o comando. Definir o idioma não é obrigatório, mas torna a ação muito mais rápida, portanto, é recomendável ter o idioma ajustado.
 
 Por fim, a ação notifica o usuário que foi executada.
 
