@@ -77,5 +77,7 @@ Por fim, execute o script usando o comando:
 python Voice2Text.py
 ```
 
+> Na primeira execução será necessário autenticar-se em sua conta do Telegram. Siga os passos e será criado um arquivo <code>.session</code>. Para remover a sessāo, remova este arquivo.
+
 Para manter o processo em execução, leia o post ["Como manter um processo rodando para sempre"](/posts/Systemctl/).
 {%endraw%}
