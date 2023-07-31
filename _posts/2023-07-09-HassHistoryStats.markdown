@@ -51,7 +51,6 @@ utility_meter:
     cycle: daily
   tempo_roomba_semanal:
     source: sensor.tempo_roomba
-    cycle: weekly
     cron: 0 0 * * 0
   tempo_roomba_mensal:
     source: sensor.tempo_roomba
