@@ -44,7 +44,6 @@ Caso queira instalar manualmente, os requisitos são:
 ```text
 openai-whisper==20230314
 TgCrypto==1.2.3
-pyTelegramBotAPI==4.11.0
 Pyrogram==2.0.106
 ```
 
