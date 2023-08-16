@@ -45,6 +45,7 @@ Caso queira instalar manualmente, os requisitos são:
 openai-whisper==20230314
 TgCrypto==1.2.3
 Pyrogram==2.0.106
+ffmpeg-python==0.2.0
 ```
 
 ## Voice2Text.py
@@ -65,10 +66,11 @@ api_id = 123456789
 api_hash = "1a2b3c4d5e6f7g8h9i0j"
 
 app = Client("Voice2Text", api_id=api_id, api_hash=api_hash)
+
 model = whisper.load_model("base")
 ```
 
-Altere a linha 11 do arquivo caso queira utilizar um modelo diferente do <code>base</code>.
+Altere a linha 16 do arquivo caso queira utilizar um modelo diferente do <code>base</code>.
 
 Por fim, execute o script usando o comando:
 
