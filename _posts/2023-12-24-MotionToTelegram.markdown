@@ -14,7 +14,7 @@ Mais que um monitor de movimento, uma <i>webcam</i> é uma poderosíssima ferram
 
 ## Motion
 
-Programa de código aberto capaz de interpretar de vídeo de câmeras e agir quando houver movimento. É o componente responsável por fazer o monitoramento e gerar um arquivo `.mp4` sempre que houver movimento. Além disso, é capaz de fazer <i>streaming</i> da câmera, permitindo a visualização em tempo real do que está acontecendo, além de poder ser integrado ao [Home Assistant](https://blog.gabrf.com/categories/home-assistant/).
+Programa de código aberto capaz de interpretar vídeo de câmeras e agir quando houver movimento. É o componente responsável por fazer o monitoramento e gerar um arquivo `.mp4` sempre que houver movimento. Além disso, é capaz de fazer <i>streaming</i> da câmera, permitindo a visualização em tempo real do que está acontecendo, além de poder ser integrado ao [Home Assistant](https://blog.gabrf.com/categories/home-assistant/).
 
 Site: [https://motion-project.github.io/](https://motion-project.github.io/)
 
