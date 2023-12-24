@@ -224,7 +224,7 @@ O código, como mostrado acima, primeiro tenta enviar um <i>gif</i> e, caso falh
 
 Ajuste a identação, alinhando as duas linhas iniciadas com `bot.` à linha iniciada com `file_open`.
 
-A última linha, `os.remove(gif_path)`, remove o arquivo após o envio, evitando que o disco do computador fique cheio. 
+A última linha, `os.remove(file_path)`, remove o arquivo após o envio, evitando que o disco do computador fique cheio. 
 
 Por fim, execute o script python[^runforever].
 
