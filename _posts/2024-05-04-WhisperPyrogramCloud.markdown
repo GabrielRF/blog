@@ -1,7 +1,7 @@
 ---
 layout: post
-title: "Transcrição automática de mensagens de voz no Telegram usando a Nuvem da OpenAI"
-date: 2024-03-24 13:00:00 -0300
+title: "Transcrição automática de áudios na nuvem da OpenAI"
+date: 2024-05-04 11:00:00 -0300
 categories: [Telegram, Automação]
 tags: telegram automação whisper openai pyrogram
 image: "/assets/img/WhisperPyrogram.jpg"
@@ -12,11 +12,12 @@ image: "/assets/img/WhisperPyrogram.jpg"
 
 # Nuvem da OpenAI
 
-Usar a nuvem da OpenAI para a transcrição de textos, apesar de paga, pode ser uma alternativa muito interessante em relação ao custo x benefício da ferramenta. Atualmente, em março de 2024, a transcrição na nuvem da OpenAI utilizando o modelo Whisper custa aproximadamente US$ 0,006 por minuto, arredondado para o segundo mais próximo do tempo do áudio. Esse custo, dependendo do uso, pode ser inferior ao gasto mensal com a energia elétrica para se manter um computador em funcionamento, especialmente as máquinas com placas de vídeo de alto desempenho. [Veja os preços atualizados da nuvem da OpenAI no site oficial](https://openai.com/pricing).
+Usar a nuvem da OpenAI para a transcrição de áudios, apesar de paga, pode ser uma ótima alternativa quando avaliada a relação custo x benefício. Atualmente, em maio de 2024, a transcrição, utilizando o modelo *Whisper*, custa aproximadamente US$ 0,006 por minuto, arredondado para o segundo mais próximo do tempo do áudio. Tal custo, dependendo do uso, pode ser inferior ao gasto mensal com a energia elétrica para se manter um computador em funcionamento, pricipalmente quando comparado ao uso de máquinas com placas de vídeo de alto desempenho. [Veja os preços atualizados da nuvem da OpenAI no site oficial](https://openai.com/pricing).
 
 Para meu uso pessoal, as principais vantages de usar a nuvem são:
-* Menor gasto no fim do mês, pois meu computador faz minha conta de energia elétrica aumentar aproximadamente R$ 100,00 no mês;
-* Maior qualidade na transcrição.
+* Menor gasto mensal, pois meu computador faz minha conta de energia elétrica aumentar aproximadamente R$ 100,00/mês, sendo o uso da nuvem inferior a US$ 2,00/mês;
+* O servidor do script tem menores requisitos computacionais uma vez que não faz nenhum processamento importante.
+* Excelente qualidade na transcrição.
 
 # Mudanças no código
 
@@ -38,15 +39,15 @@ def voice_to_text(voice_file, i=0):
     return result
 ```
 
-Além de, obviamente, criar um client antes de a função ser executada,
+E criar um `client` antes de a função ser executada:
 
 ```python
 client = OpenAI(api_key='ab-cdefghijklmnopqrstuvxz')
 ```
 
-Crie sua `API_KEY` no site da OpenAI, em [platform.openai.com/api-keys](https://platform.openai.com/api-keys).
+A `API_KEY` deve ser obtida cadastrando-se em [platform.openai.com/api-keys](https://platform.openai.com/api-keys).
 
-Ou seja, o código completo seria:
+O código completo da solução é:
 ```python
 from pyrogram import Client, filters, enums
 import telebot
@@ -122,5 +123,8 @@ def receive_voice(client, message):
 
 app.run()
 ```
-
 {%endraw%}
+
+**E pronto!** Deixando esse script em execução, as transcrições das mensagens de voz enviadas ou recebidas acontecerá automaticamente.
+
+Leia mais em *[Como manter um processo rodando para sempre](https://blog.gabrf.com/posts/Systemctl/)*.
