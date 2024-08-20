@@ -13,7 +13,7 @@ No dia 6 de Junho de 2024 o Telegram lançou sua criptomoeda chamada <i>Telegram
 
 ## Compra
 
-As <i>Stars</i> podem ser adquiridas a partir de qualquer bot que cobre-as. Basta clicar no botão de comprar que, não havendo saldo suficiente em <i>Stars</i>, será exibida a opção de compra. Seu custo é de aproximadamente US$ 1,00 para cada 50 <i>Stars</i>.
+As <i>Stars</i> podem ser adquiridas a partir de qualquer bot que tenha sistema de cobrança. Basta clicar no botão de comprar que, não havendo saldo suficiente em <i>Stars</i>, será exibida a opção de compra. Seu custo é de aproximadamente US$ 1,00 para cada 50 <i>Stars</i>.
 
 ### Tabela de preços (em dólares)
 
@@ -83,7 +83,7 @@ Tabela com os preços de apps de lojas. [Fonte](https://core.telegram.org/bots/p
 
 ## Consultar Saldo
 
-O saldo é visualizado individualmente em cada chat, seja ele um bot ou um canal. Infelizmente os saldos não são agrudados. Ou seja, mesmo que sejam atingidas 998 estrelas em um bot e 500 em um canal, o saque não será permitido. É necessário que o requisito seja atingido no chat individualmente.
+O saldo é visualizado individualmente em cada chat, seja ele um bot ou um canal. Infelizmente os saldos não são agrupados. Ou seja, mesmo que sejam atingidas 998 estrelas em um bot e 500 em um canal, o saque não será permitido. É necessário que o requisito seja atingido no chat individualmente.
 
 <img src="/assets/img/TelegramStarsSaldo.png" alt="Saldo de Stars em um bot." style="width:50%">
 <br><small>Saldo de Stars em um bot.</small>
@@ -94,7 +94,7 @@ Estou usando as estrelas em dois bots, [@Send2KindleBot](https://t.me/Send2Kindl
 
 ## Conclusão
 
-Apesar de ser uma solução de fácil implementação nos bots e canais, as Estrelas estão longe de ser uma solução ideal. Infelizmente, dentre os usuários de meus bots, o comentário mais comum foi: <i>Não encontrei onde comprar as estrelas</i>. Ou seja, há ainda um longo caminho de ensinamentos a ser trilhado. O Telegram não fez nenhuma ação que explicasse o funcionamento ou a aquisição das estrelas. Além disso, o fato de os saldos não serem agrudados me preocupa muito, pois é possível que as estrelas se percam antes do prazo possível para o saque.
+Apesar de ser uma solução de fácil implementação nos bots e canais, as Estrelas estão longe de ser uma solução ideal. Infelizmente, dentre os usuários de meus bots, o comentário mais comum foi: <i>Não encontrei onde comprar as estrelas</i>. Ou seja, há ainda um longo caminho de ensinamentos a ser trilhado. O Telegram não fez nenhuma ação que explicasse o funcionamento ou a aquisição das estrelas. Além disso, o fato de os saldos não serem agrupados me preocupa muito, pois é possível que as estrelas se percam antes do prazo possível para o saque.
 
 > Stars earned in connection with the content you publish on Telegram are valid for 3 years from the date they were received. Should you fail to accept rewards with the Stars you accrued within their 3 year period of validity, they will be considered forfeit and debited from your balance[^3anos].
 
