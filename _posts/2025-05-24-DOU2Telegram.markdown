@@ -3,7 +3,7 @@ layout: post
 title: "Monitoramento do Diário Oficial da União via Telegram"
 date: 2025-05-24 18:25:00 -0300
 categories: [Telegram, Bot]
-tags: telegram bot openai moderation
+tags: telegram bot dou diariooficial
 image: "/assets/img/dou_logo.jpg"
 ---
 
