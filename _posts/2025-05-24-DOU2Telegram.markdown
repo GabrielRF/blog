@@ -82,11 +82,11 @@ if __name__ == "__main__":
         +'%22&s=todos&exactDate=personalizado'
         +f'&sortType=0&publishFrom={today}&publishTo={today}'
     )
-    html = check_dou(link, param)
+    html = check_dou(link, termo)
     if html:
         content, results = get_dou_results(html)
         if results:
-            send_message(param, link, results)
+            send_message(termo, link, results)
 ```
 
 ## Resumo do funcionamento
