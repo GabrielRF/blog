@@ -184,7 +184,7 @@ FOLDER = <PASTA A SER MONITORADA>
 EXTENSION = <EXTENSÃO DO ARQUIVO>
 DESTINATION = <ID DE DESTINO>
 
-bot = telegram.Bot(TOKEN)
+bot = telebot.TeleBot(TOKEN)
 notifier = inotify.adapters.InotifyTree(FOLDER)
 
 for event in notifier.event_gen():
