@@ -1,0 +1,55 @@
+---
+layout: post
+title: "WhatsApp no trabalho - Perspectiva como ATI"
+date: 2026-09-26 18:00:00 -0300
+categories: [Analista em Tecnologia da Informação, WhatsApp]
+tags: whatsapp teams trabalho ati
+image: "/assets/img/WhatsApp.png"
+---
+
+# Contexto
+
+No ano de 2026 fui nomeado em um concurso público e, com muito orgulho, entrei em exercício. Trabalhar para o Estado não é algo novo para mim, porém, na situação de concursado e, principalmente, de gestor, são casos completamente novos. O WhatsApp está enraizado no serviço público. Não usá-lo e observar os outros me fez confirmar que o aplicativo é extremamente inadequado ao trabalho. 
+
+# Gestão
+
+A tarefa enquanto gestor é manter tudo organizado e garantir que o fluxo do trabalho funcione em ritmo adequado, sempre atento aos regramentos. O Teams é a ferramenta oficial de comunicação, no entanto, é inegável que a maioria prefira o WhatsApp. "Todo mundo tem", "É mais rápido" são as desculpas mais comuns.
+
+## Privacidade
+
+Usar o WhatsApp tem consequência imediata em nossa privacidade, nosso espaço pessoal e nosso tempo de descanso. Nosso número pessoal deixa de ser pessoal. O horário de trabalho vira um eterno plantão. As férias e o descanso deixam de existir. Tudo vira trabalho. O tempo todo.
+
+Ao entrar em grupos, todos passam a ter seu número. Não responder uma mensagem de imediato se torna um problema. As ligações fora de hora por _emergências_ se tornam comuns. 
+
+Grupo do time, grupo do setor, grupo do andar. Grupo do café da manhã, do café da tarde. Grupo da festinha, do bar, do happy-hour. Grupo do cliente, do fornecedor e grupo dos ex-colegas. Grupo da família. Grupo dos vizinhos. Tudo junto, uma bagunça só.
+
+## Conhecimento
+
+O dano causado pelo WhatsApp aparece no médio e no longo prazo. Pessoas vem e vão. Mensagens somem no passado. Ao entrar em um grupo já existente, todo o conhecimento ali depositado fica invisível. É um eterno loop de explicações repetidas e de retrabalho. A cada novo membro, tudo deveria ser repetido, o que simplesmente não acontece. O grupo não gera documentação, não gera conhecimento, é volátil. Decisões se perdem. Embasamentos e discussões somem. Temo uma eventual troca de governo. Voltaremos anos em termos de perda de conhecimento! 
+
+### Mensagem de voz
+
+> Você sabe qual é a diferença entre o inferno e aqui? A diferença é que no inferno todas as interações são por áudio de WhatsApp.
+[Ayub, 2022](https://x.com/GabRF/status/1478457369252315138).
+
+A pior forma de se comunicar em um ambiente de trabalho. O conteúdo não é indexado para buscas futuras, é ignorado por muitos, é inútil. Se for realmente necessário, faça uma ligação. Se não for, mande por texto. Nunca envie uma mensagem de voz.
+
+Um trabalho técnico se perde em um mundo de áudios. Medidas, instruções, demandas. Se precisar confirmar algo, prepare-se para ouvir horas e mais horas de blablabla sem sentido até encontrar algo relevante.
+
+## API
+
+O WhatsApp não permite o envio de mensagens gratuitamente via API. Ou seja, ele não permite a integração gratuita com ferramentas como Zabbix. Não pode ser integrado ao calendário, e-mail, nada. Tudo é pago e caro. Automações simples como uma transcrição de uma reunião são tarefas que beiram o impossível. Ou seja, a ferramenta que todo mundo tem é uma faca cega, usada como martelo e chave de fenda.
+
+## Backup e apps
+
+Você já trocou de telefone e precisou migrar o conteúdo do seu WhatsApp? O WhatsApp no computador funciona bem? E o armazenamento do telefone, como está?
+
+# O que fazer?
+
+Use o que o seu trabalho te fornece e paga para funcionar. Enquanto servidor público afirmo: use o Teams. É a ferramenta oficial, existe para isso. Foi escolhida por questões de privacidade, de integrações e por ser da mesma empresa de outras ferramentas usadas diariamente. A comunicação é da instituição. Os grupos no Teams são dos cargos, não das pessoas, logo, a troca de pessoal não causa perda de conhecimento.
+
+# Futuro
+
+Gosto de pensar na ideia de usar uma ferramenta de código aberto, grátis e hospedada em território nacional. Mantida pelo Estado e capaz receber contribuições de todo o mundo. Parecido com o Teams ou com o Slack, mas de código aberto. 
+
+Sei que existem algumas, mas como implementar isso e fazer as pessoas usarem? Não sei. Mas não use o WhatsApp para trabalhar.
